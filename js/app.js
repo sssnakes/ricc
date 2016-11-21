@@ -6,16 +6,22 @@ $(document).ready(function(){
     startDelay: 1000
   });
 
-  // $("#front").delay(3000).fadeTo("slow", 0, function(){
-  //   $("#front").remove();
-  // });
-
-  $("#marathon").hover(function(){
-      $(".sun").fadeOut(200);
-      $(".icon-bike").fadeIn(200);
-  },function(){
-      $(".sun").fadeIn(200);
-      $(".icon-bike").fadeOut(200);
+  $("#front").delay(3000).fadeTo("slow", 0, function(){
+    $("#front").remove();
   });
 
+  $('.i-link')
+    .mouseenter(function(){
+      var type = $(this).data('icon');
+      var name = ('#icon-' + type);
+      $(name).fadeTo(200, 0.3);
+    })
+    .mouseleave(function(){
+      var type = $(this).data('icon');
+      var name = ('#icon-' + type);
+      $(name).fadeOut(200);
+    });
+
+
+// END
 });

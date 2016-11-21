@@ -52,6 +52,27 @@ body {
   cursor: pointer;
 }
 
+.icon-big{
+  display: none;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 50%;
+}
+
+#icon-software{ background-image: url(./icons/big/software.svg); }
+#icon-cloud{ background-image: url(./icons/big/cloud.svg); }
+#icon-grid{ background-image: url(./icons/big/grid.svg); }
+#icon-hand{ background-image: url(./icons/big/hand.svg); }
+#icon-learning{ background-image: url(./icons/big/learning.svg); }
+#icon-theory{ background-image: url(./icons/big/theory.svg); }
+#icon-running{ background-image: url(./icons/big/running.svg); }
+#icon-next{ background-image: url(./icons/big/next.svg); }
+
+
 .sun{
   position: fixed;
   bottom: 30px;
